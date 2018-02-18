@@ -1,3 +1,14 @@
-<div *ngFor='let element of elements'>
-    <button (click)="onClick(element)">{{element}}</button>
+<div class="row">
+  <div class="col">
+    <div id="form">
+
+    </div>
+  </div>
+  <div class="col">
+      <div *ngFor='let element of elements'>
+        <div class="buildButtons">
+          <button (click)="onClick(element)">{{element}}</button>
+        </div>
+      </div>
+  </div>
 </div>

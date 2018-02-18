@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # FormBuilder
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
@@ -26,7 +25,3 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-=======
-# formBuilder
-
->>>>>>> fd14ceaad294b42623d77fb3e442846b5c76d528

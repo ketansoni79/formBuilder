@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InputComponent implements OnInit {
 
-  public elements = ["p", "input", "button"]
+  public elements = ["p", "input", "button", "textarea"]
 
   constructor() { }
 
@@ -15,13 +15,14 @@ export class InputComponent implements OnInit {
   }
 
   onClick(ele) {
-    console.log(ele);
+    var div = document.createElement("div")
+    div.className = "formElement"
     var element = document.createElement(ele)
     var text = document.createTextNode("new element added")
     element.appendChild(text)
+    div.appendChild(element)
 
-    var id = document.getElementById("new")
-    id.appendChild(element)
-    console.log('running')
+    var btn = document.getElementById("form")
+    btn.appendChild(div)
   }
 }
