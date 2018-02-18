@@ -2,4 +2,8 @@
   input works!
 </p>
 
-<button (click)="onInputButton">Add input</button>
+<div *ngFor='let element of elements'>
+  <button (click)="onclick(element)">{{element}}</button>
+</div>
+
+<button (click)="onClick()">Add input</button>

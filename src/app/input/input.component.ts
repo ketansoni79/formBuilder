@@ -7,13 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InputComponent implements OnInit {
 
+  public elements = ["p", "input", "button"]
+
   constructor() { }
 
   ngOnInit() {
   }
 
-  public onInputButton: ()=>{
-    
-  }
+  onClick(ele){
+    var element = document.createElement(ele)
+    var text = document.createTextNode("new element added")
+    element.appendChild(text)
 
+    var id = document.getElementById("new")
+    id.appendChild(element)
+    console.log('running')
+  }
 }
