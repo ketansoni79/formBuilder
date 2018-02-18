@@ -14,7 +14,8 @@ export class InputComponent implements OnInit {
   ngOnInit() {
   }
 
-  onClick(ele){
+  onClick(ele) {
+    console.log(ele);
     var element = document.createElement(ele)
     var text = document.createTextNode("new element added")
     element.appendChild(text)
